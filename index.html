@@ -47,7 +47,7 @@
           <h1 class="main__title">
             EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
           </h1>
-          <button class="main__button" type="button">
+          <button class="main__button" data-modal-open type="button">
             Request our service
           </button>
         </div>
@@ -99,10 +99,10 @@
           </ul>
         </div>
       </section>
-      <section class="section" id="portfolio">
+      <section class="section services" id="portfolio">
         <div class="container">
           <h2 class="section__heading">What we do</h2>
-          <ul class="list portfolio__list">
+          <ul class="list services__list">
             <li>
               <img
                 src="./images/what-we-do1.jpg"
@@ -110,6 +110,7 @@
                 width="370"
                 height="294"
               />
+              <div class="services__image-text">DESKTOP APPS</div>
             </li>
             <li>
               <img
@@ -118,6 +119,7 @@
                 width="370"
                 height="294"
               />
+              <div class="services__image-text">MOBILE APPS</div>
             </li>
             <li>
               <img
@@ -126,11 +128,11 @@
                 width="370"
                 height="294"
               />
+              <div class="services__image-text">DESIGN SOLUTIONS</div>
             </li>
           </ul>
         </div>
       </section>
-
       <section class="section team">
         <div class="container">
           <h2 class="section__heading">Our Team</h2>
@@ -433,5 +435,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close type="button">
+          <svg class="icon icon-modal-close">
+            <use xlink:href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
